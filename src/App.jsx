@@ -3,7 +3,7 @@ import {
   FaMicrochip, FaArrowRight, FaCheckCircle, FaUsers, 
   FaChalkboardTeacher, FaLaptopCode, FaUserGraduate, FaClock,
   FaPhoneAlt, FaMapMarkerAlt, FaFacebookF, 
-  FaTwitter, FaLinkedinIn, FaYoutube, FaBars, FaTimes,
+  FaYoutube, FaBars, FaTimes,
   FaGraduationCap, FaCertificate, FaRocket, FaShieldAlt,
   FaLaptop, FaUserCog, FaUtensils, FaCut, FaPaintBrush,
   FaInstagram, FaHeart, FaWhatsapp,
@@ -739,10 +739,21 @@ const Contact = () => {
                 </div>
               ))}
               
+              {/* Social Media Icons - Updated: Facebook, Instagram, YouTube only */}
               <div className="flex gap-3 mt-6">
-                {[FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaInstagram].map((Icon, i) => (
-                  <a key={i} href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                    <Icon />
+                {[
+                  { Icon: FaFacebookF, link: 'https://www.facebook.com/fit_rwp' },
+                  { Icon: FaInstagram, link: 'https://www.instagram.com/fit_rwp' },
+                  { Icon: FaYoutube, link: 'https://www.youtube.com/@fit_rwp' }
+                ].map((item, i) => (
+                  <a 
+                    key={i} 
+                    href={item.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+                  >
+                    <item.Icon />
                   </a>
                 ))}
               </div>
@@ -868,10 +879,21 @@ const Footer = () => (
             </div>
           </div>
           <p className="text-sm text-gray-300">Empowering the next generation with professional skills and career opportunities.</p>
+          {/* Social Media Icons - Updated: Facebook, Instagram, YouTube only */}
           <div className="flex gap-3 mt-4">
-            {[FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaInstagram].map((Icon, i) => (
-              <a key={i} href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                <Icon className="text-sm" />
+            {[
+              { Icon: FaFacebookF, link: 'https://www.facebook.com/fit_rwp' },
+              { Icon: FaInstagram, link: 'https://www.instagram.com/fit_rwp' },
+              { Icon: FaYoutube, link: 'https://www.youtube.com/@fit_rwp' }
+            ].map((item, i) => (
+              <a 
+                key={i} 
+                href={item.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                <item.Icon className="text-sm" />
               </a>
             ))}
           </div>
