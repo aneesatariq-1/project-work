@@ -1,0 +1,8 @@
+node_modules
+.git
+.vscode
+*.log
+*.md
+.DS_Store
+*.pem
+yarn-error.log
