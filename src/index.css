@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-inter text-gray-800 antialiased;
+    background-color: #ffffff;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-title-blue {
+    @apply text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900;
+  }
+  
+  .btn-primary-blue {
+    @apply bg-blue-600 text-white px-8 py-3 rounded-full font-semibold 
+           hover:bg-blue-700 transition-all duration-300 
+           shadow-lg hover:shadow-blue-600/30 hover:scale-105
+           inline-flex items-center gap-2;
+  }
+  
+  .btn-outline-blue {
+    @apply border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold 
+           hover:bg-blue-600 hover:text-white transition-all duration-300
+           inline-flex items-center gap-2;
+  }
+  
+  .card-hover-blue {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  
+  .nav-link-blue {
+    @apply text-gray-600 hover:text-blue-600 transition-colors duration-300 
+           font-medium relative after:absolute after:bottom-0 after:left-0 
+           after:w-0 after:h-0.5 after:bg-blue-600 
+           after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-blue-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-600 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+}
