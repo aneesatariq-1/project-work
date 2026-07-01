@@ -249,7 +249,7 @@ const Hero = () => (
         <div className="space-y-6 animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
             <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
-            <span className="text-blue-600 font-semibold text-sm">Admissions Open 2024</span>
+            <span className="text-blue-600 font-semibold text-sm">Admissions Open 2026</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
@@ -920,7 +920,7 @@ const Footer = () => (
       </div>
 
       <div className="text-center pt-8 text-sm text-gray-300">
-        <p>© 2024 Foundation Institute of Technology. All Rights Reserved.</p>
+        <p>© 2026 Foundation Institute of Technology. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
