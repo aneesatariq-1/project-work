@@ -2,11 +2,14 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm install",
+  "installCommand": "npm install --legacy-peer-deps",
   "regions": ["iad1"],
   "git": {
     "deploymentEnabled": {
       "main": true
     }
+  },
+  "env": {
+    "NODE_VERSION": "18.17.0"
   }
 }
