@@ -19,12 +19,21 @@ const coursesData = [
     title: 'Digital Marketing',
     icon: <FaLaptop className="text-3xl" />,
     image: 'https://images.makearmy.io/i/5359e4e8-230e-4425-a503-99760f7a228f.jpg',
-    description: 'Master SEO, social media marketing, email campaigns, and analytics to drive business growth.',
+    description: 'Master SEO, Social Media Marketing, Content Marketing, Email Marketing, Google Ads, and Analytics to create effective digital marketing strategies and drive business growth.',
     duration: '3 Months',
     fee: 'Rs. 5,000',
     students: 120,
     rating: 4.8,
-    modules: ['SEO & SEM', 'Social Media Marketing', 'Email Marketing', 'Google Analytics'],
+    modules: [
+    'SEO & SEM',
+    'Social Media Marketing',
+    'Content & Email Marketing',
+    'Google Ads',
+    'YouTube Ads',
+    'Google Analytics & Performance Tracking',
+    'Basic AI Automation',
+    'Digital Marketing Strategy'
+]
     color: 'from-blue-600 to-blue-800'
   },
   {
