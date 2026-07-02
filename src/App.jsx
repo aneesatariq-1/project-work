@@ -32,8 +32,7 @@ const coursesData = [
     'YouTube Ads',
     'Google Analytics & Performance Tracking',
     'Basic AI Automation',
-    'Digital Marketing Strategy'
-]
+    'Digital Marketing Strategy'],
     color: 'from-blue-600 to-blue-800'
   },
   {
